@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
         secure: false,
         requireTLS: true,
         auth: {
-            user: 'bhargavjaldu868860@gmail.com',
+            user: email,
             pass: 'zvntwxdthsnyghzo'
         }
       });
