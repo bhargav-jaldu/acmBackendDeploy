@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
         secure: false,
         requireTLS: true,
         auth: {
-            user: email,
+            user: 'bhargavjaldu868860@gmail.com',
             pass: 'zvntwxdthsnyghzo'
         }
       });
@@ -25,8 +25,9 @@ router.post('/', (req, res) => {
       var mailOptions = {
         from: email,
         to: 'bhargavjaldu868860@gmail.com',
-        subject: 'Sending Email using Node.js',
-        text: message
+        subject: 'From ACM WEBSITE',
+        text: message,
+        html: `<h3>From: ${email}</h3> </br> Message: ${message}`
       };
       
       transporter.sendMail(mailOptions, function(error, info){
